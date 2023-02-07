@@ -1,15 +1,15 @@
 export class GiphyService {
-  static searchGiphy(userSearchQuery) {
+  static searchGiphy(search) {
     return new Promise(function (resolve, reject) {
       let request = new XMLHttpRequest();
-      const url = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.API_KEY}&q=${userSearchQuery}&limit=25&offset=0&rating=g&lang=en`;
+      const url = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.API_KEY}&q=${search}&limit=25&offset=0&rating=g&lang=en`;
 
       request.addEventListener("loadend", function () {
-        let response = JSON.parse(this.responseText);
+        const response = JSON.parse(this.responseText);
         if (this.status === 200) {
-          resolve(response);
+          resolve([response, search]);
         } else {
-          reject([this, response, userSearchQuery]);
+          reject([this, response, search]);
         }
       });
       request.open("GET", url, true);
