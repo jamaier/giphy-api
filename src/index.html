@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Temp</title>
+    <title>Search Gifs</title>
   </head>
   <body>
-    <img src="./assets/images/stock-puppy-photo.jpg" alt="such a pup!">
+    <div class="container">
+      <h1>Search Gifs</h1>
+      <form id="searchForm">
+        <label for="searchBar">Enter a search term: </label>
+        <input type="text" id="keyword">
+        <button type="button" class="btn-success" id="search">Search</button>
+        <button type="button" class="btn-success" id="trending">Show Trending</button>
+        <button type="button" class="btn-success" id="random">Show Random</button>
+      </form>
+    </div>
+    <div id="showResults">
+      <h2 id="searchResults"></h2>
+    </div>
+    <!-- <img src="./assets/images/stock-puppy-photo.jpg" alt="such a pup!"> -->
   </body>
 </html>

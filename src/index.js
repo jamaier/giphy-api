@@ -1,5 +1,10 @@
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
-// import Character from '../src/js/main';
-// import Monster from "../src/js/main";
+import { GiphyAPI } from './../src/js';
+
+  function printElements(response) {
+    let results = document.getElementById('searchResults');
+    let response = 
+  }
+
