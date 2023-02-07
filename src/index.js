@@ -19,14 +19,17 @@ function searchGiphy(search) {
 function printElements(resource) {
   document.getElementById("showResults").innerHTML = null;
   document.getElementById("keyword").value = null;
-
-  if (resource.data[1] !== undefined) {
+  if (resource !== undefined) {
     resource.data.forEach((gif) => {
       const img = document.createElement("img");
       img.setAttribute("src", gif.images.original.url);
       img.setAttribute("width", "150px");
       document.getElementById("showResults").append(img);
     });
+  }else {
+    const img = document.createElement("img");
+    img.setAttribute('src', resource.data.images.original.url);
+    document.getElementById('showResults').append(img);
   }
 }
 
