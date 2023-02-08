@@ -1,39 +1,38 @@
-# _{Application Name}_
+# _Giphy API_
 
-#### By _Jacob Maier_
+#### By _Jacob Maier & Erin Timlin_
 
-#### _{Brief description of application}_
+#### _A web application to pull gifs using Giphy's api service_
 
 ## Technologies Used
 
 * _JavaScript_
 * _NodeJS_
-* _JEST_
 * _Webpack_
-* _ESLint_
 * _Babel_
 * _CSS_
 * _HTML_
 
 ## Description
 
-_{}_
+_A web application using API service to pull images and gifs from Giphy to post them using the users input._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone this repo to your desktop_
+* _Create an API Key at https://developers.giphy.com/dashboard/_
+* _Create a new file named `.env` and place you API key inside a new line with the following:`API_KEY = {Your API Key Here}`_
+* _Run `npm install` to install proper packages_
+* _Run `npm run build` to build project_
+* _Run `npm start` to run the developer server_
 
 
 ## Known Bugs
 
-* _Any known issues_
+* _N/A_
 
 ## License
 
 _MIT_
 
-Copyright (c) _2023_ _Jacob Maier_
+Copyright (c) _2023_ _Jacob Maier & Erin Timlin_
